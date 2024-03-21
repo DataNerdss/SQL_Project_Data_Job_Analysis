@@ -1,5 +1,5 @@
 /*
-5. What are the most optimal skills to learn?
+5.  What are the most optimal skills to learn?
 (High demand and high paying)
 */
 
