@@ -6,24 +6,20 @@ Question: What are the top-paying Data Analyst jobs?
 */
 
 SELECT
-    job_posted_date::DATE,
     job_id,
     job_title,
-    job_location,
     salary_year_avg,
     name AS company_name
-FROM job_postings_fact
-LEFT JOIN company_dim on job_postings_fact.company_id = company_dim.company_id
+FROM
+    job_postings_fact
+INNER JOIN company_dim ON
+    job_postings_fact.company_id = company_dim.company_id
 WHERE
     job_title_short = 'Data Analyst' AND
-    job_location = 'Anywhere' AND
-    salary_year_avg IS NOT NULL
-ORDER BY
-    salary_year_avg DESC
-LIMIT(10)
-
-
-
+    salary_year_avg IS NOT NULL AND
+    job_location = 'Anywhere'
+ORDER BY salary_year_avg DESC
+LIMIT 20
 
 
 

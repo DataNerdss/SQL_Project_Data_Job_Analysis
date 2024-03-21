@@ -1,3 +1,6 @@
+/* What are the most in-demand skills for these roles?
+- Filter for Data Analyst Jobs and remote jobs
+*/
 SELECT
     skills,
     COUNT(job_postings_fact.job_id) AS demand_count
@@ -11,4 +14,4 @@ GROUP BY
     skills
 ORDER BY
     demand_count DESC
-LIMIT 5
+LIMIT 10
