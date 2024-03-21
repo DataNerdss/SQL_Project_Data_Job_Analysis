@@ -86,7 +86,7 @@ ORDER BY
     salary_year_avg DESC
 LIMIT 20
 ```
-![Top Paying Roles](Images\Top_skills1.png)
+![Top Paying Roles](Images/Top_skills1.png)
 
 ### Insights
 
