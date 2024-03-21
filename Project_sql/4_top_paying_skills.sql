@@ -1,3 +1,6 @@
+/*
+4. What are the top-paying skills for Data Analyst role?
+*/
 SELECT
     skills,
     ROUND(AVG(salary_year_avg),0) AS Average_salary
@@ -12,4 +15,4 @@ GROUP BY
     skills
 ORDER BY
     Average_salary DESC
-LIMIT 20
+LIMIT 10
