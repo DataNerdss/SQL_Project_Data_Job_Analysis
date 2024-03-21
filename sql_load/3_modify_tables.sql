@@ -23,12 +23,6 @@ NOTE: If you are having issues with permissions. And you get error:
 
 */
 
--- NOTE: This has been updated from the video to fix issues with encoding
-
-SELECT * 
-FROM company_dim
-LIMIT (5)
-
 COPY company_dim
 FROM 'C:\Users\User\Desktop\Programming_Files\SQL_Codes\csv_files\company_dim.csv'
 DELIMITER ',' CSV HEADER;
